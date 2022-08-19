@@ -1,8 +1,36 @@
-  allocated_storage    = var.allocated_storage
-  engine               = var.engine
-  engine_version       = var.engine_version
-  instance_class       = var.instance_class
-  name                 = var.name
-  username             = var.username
-  parameter_group_name = var.parameter_group_name
-  skip_final_snapshot  = var.skip_final_snapshot
+variable "allocated_storage" {
+  description = "(Required) ARN of the KMS to encrypt all the volumes."
+  type        = string
+}
+variable "engine" {
+  description = "(Required) ARN of the KMS to encrypt all the volumes."
+  type        = string
+}
+variable "engine_version" {
+  description = "(Required) ARN of the KMS to encrypt all the volumes."
+  type        = string
+}
+variable "instance_class" {
+  description = "(Required) ARN of the KMS to encrypt all the volumes."
+  type        = string
+}
+variable "name" {
+  description = "(Required) ARN of the KMS to encrypt all the volumes."
+  type        = string
+}
+variable "parameter_group_name" {
+  description = "(Required) ARN of the KMS to encrypt all the volumes."
+  type        = string
+}
+variable "skip_final_snapshot" {
+  description = "(Required) ARN of the KMS to encrypt all the volumes."
+  type        = string
+}
+variable "kms_key_arn" {
+  description = "(Required) ARN of the KMS to encrypt all the volumes."
+  type        = string
+}
+variable "kms_key_arn" {
+  description = "(Required) ARN of the KMS to encrypt all the volumes."
+  type        = string
+}
