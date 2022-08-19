@@ -4,8 +4,9 @@ resource "aws_db_instance" "default" {
   engine_version       = "19.0.0.0.ru-2021-10.rur-2021-10.r1"
   instance_class       = "db.r5.xlarge"
   name                 = "oracle"
-  username             = "var.secrets.USERNAME"
-  password             = "secrets.RANDOM_PASSWORD"
+  username             = "usuario353"
+  key_name              = "pgxinfra"
+  # password             = "secrets.RANDOM_PASSWORD"
   parameter_group_name = "default.oraclel5.7"
   skip_final_snapshot  = true
 }
